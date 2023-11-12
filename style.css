@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Overpass';
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(216, 12%, 8%);
+}
+.rating-box {
+	width: 360px;
+	padding: 25px;
+	background: linear-gradient(180deg, #1e252f, #171e28);
+	border-radius: 20px;
+}
+.star {
+	padding: 10px;
+	border-radius: 50px;
+	background-color: hsl(213, 19%, 18%);
+}
+.title {
+	font-weight: 600;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.text {
+	color: hsl(216, 12%, 54%);
+}
+.text-center {
+	text-align: center;
+}
+.rating {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.rating p {
+	cursor: pointer;
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(216, 12%, 54%);
+	border-radius: 50px;
+	transition: all 0.2s ease;
+	background-color: #252d37;
+}
+.rating p:hover {
+	color: white;
+	background: hsl(25, 97%, 53%);
+}
+.btn {
+	cursor: pointer;
+	width: 100%;
+	font-weight: 500;
+	padding: 10px 0;
+	border-radius: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border: none;
+	color: white;
+	transition: all 0.2s ease;
+	background: hsl(25, 97%, 53%);
+}
+.btn:hover {
+	background-color: #fff;
+	color: hsl(25, 97%, 53%);
+}
+.thanks-box {
+	display: none;
+	width: 360px;
+	padding: 25px;
+	background: linear-gradient(180deg, #1e252f, #171e28);
+	border-radius: 20px;
+}
+.img-box {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+.selected-text {
+	padding: 5px 15px;
+	text-align: center;
+	color: #cb8859;
+	background: #262f38;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+.err-msg {
+	color: red;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 410px) {
+	body {
+		position: absolute;
+		height: 100%;
+		top: 50%;
+		left: 50%;
+		padding: 20px;
+		transform: translate(-50%, -50%);
+	}
+	.rating-box {
+		width: 100%;
+	}
+	.thanks-box {
+		width: 315px;
+	}
+	.rating {
+		gap: 10px;
+	}
+}
+@media only screen and (max-width: 350px) {
+	body {
+		padding: 1px;
+	}
+	.rating-box {
+		width: 300px;
+	}
+}
